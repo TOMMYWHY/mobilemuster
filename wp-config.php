@@ -26,7 +26,7 @@ define('DB_NAME', 'mobilemuster');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '123');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -82,10 +82,14 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
+
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
+/*tommy*/
+define('CONCATENATE_SCRIPTS',false);
+
 require_once(ABSPATH . 'wp-settings.php');
 
 define("FS_METHOD","direct");
